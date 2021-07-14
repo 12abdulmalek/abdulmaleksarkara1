@@ -1,0 +1,309 @@
+/* Google Fonts: Browse Fonts  */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+
+/* common style start  */
+
+body{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+a{
+    text-decoration: none;
+}
+/* ------------------ 
+copa header area start  
+----------------------*/
+
+.copa{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #2d25a0;
+}
+.copa-header-area{
+    width: 485px;
+    height: 230px;
+    margin-right: 57px;
+    margin-left: 143px;
+}
+.copa-player-style{
+    width: 556px;
+    height: 438px;
+    margin: 113px 0px 86px 20px;
+}
+
+.copa-player-style img{
+    width: 500px;
+    height: 438px;
+}
+.copa-header-area h1{
+     font-size: 64px;
+     margin-top: 0;
+     margin-bottom: 5px;
+     line-height: 81px;
+    color:#FFFFFF
+}
+.copa-header-area a ,.red-color{
+    text-decoration: none;
+    color:#fff;
+    background-color: #e02c6d;
+    font-size: 15px;
+    padding: 10px;
+    border-radius: 5px;
+}
+.copa-header-area a span{
+   margin-left: 12px;
+}
+
+     
+.header-area:hover .copa-player-style img{
+
+    transition: transform 2s ease-in-out ;
+    transform: rotate(45deg);
+    transform-origin: top left;
+}
+
+
+ /*---------------- 
+ player details 
+ ---------------- */
+
+ .footballer{
+    margin-top: 80px;
+}
+.player-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.players{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    justify-content: center;
+    grid-gap: 30px 27px;
+
+}
+.player-info {
+    border-radius: 6px;
+    width: 300px;
+    height: 470px;
+    padding: 5px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.15);
+}
+
+.player {
+    width: 300px;
+    height: 274px;
+}
+
+.player img {
+    width: 100%;
+    border-radius: 10px;
+}
+  
+.player-details h1{
+    color: #18191F; 
+    }
+.player-details p{
+color: #6C6C6C;
+    
+}
+
+/*--------------
+ footer area  
+--------------*/
+
+.footer-img img{
+    margin-top: 80px;
+   width: 350px;
+   
+}
+.footer-part{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.footer-social-media{
+    display: flex;
+      color: #aca5a5;
+
+}
+.footer-social-media i{
+   display: flex;
+   justify-content: center;
+  align-items: center;
+    width: 32px;
+    height: 32px;
+    background-color:#e5e6eb;
+    border-radius: 50%;
+
+}
+.footer-content p{
+  color:#272561;
+  font-weight: 500;
+}
+ 
+/* play match start  */
+
+.play-match{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 500px;
+    margin-top: 50px;
+
+
+}.play-match img{
+    width:95%;
+}
+.show-match{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+
+}
+
+/* match result  */
+
+
+.country{
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+     margin-top: 50px;
+ box-shadow: 0px 0px 50px rgba(20, 18, 18, 0.541);
+}
+.country h1{
+  margin-bottom: 50px;
+}
+.match-result{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+}
+.match{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+width: 210px;
+}
+
+.match h2{
+    margin-top:0 ;
+}
+.match h1{
+    font-size: 43px;
+    margin-top: 12px;
+}
+
+.more-match{
+    display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+.more-match i{
+    display: flex;
+    width: 40px;
+    height: 40px;
+    color: #fff;
+    background-color: #322aa0;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+
+
+ /* player news */
+.latest-news{
+    display: flex;
+    flex-direction: column;
+}
+.player-news {
+    display: flex;
+    width: 900px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+}
+.football-player{
+    width: 50%;
+}
+#football-news{
+    margin-left: 30px;
+}
+.football-player p{
+    color: gray;
+}
+
+
+.update-news{
+    margin-top: 40px;
+    text-align: center;
+}
+  
+/* -----------###########---------------
+    responsive design start  
+------------**********-----------*/
+
+
+/*----------- responsive for tab start
+--------------- */
+@media (max-width:976px) {
+    .copa{
+display: flex;
+flex-direction: column;
+}
+.players{
+grid-template-columns: repeat(2,1fr);
+}
+.show-match{
+    grid-template-columns: repeat(1,1fr);
+}
+
+.match-result{
+  
+    grid-template-columns: repeat(1,1fr);
+}
+.player-news {
+    display: flex;
+      flex-direction:column ;
+}
+/*--------------------
+responsive for mobile phone 
+------------------- */
+}
+@media (max-width:650px) {        
+
+.players{
+grid-template-columns: 1fr
+}
+
+}
+
+ /* -------------------
+ extra header responsive 
+ -------------------- */
+
+@media (max-width:527px) {
+.copa-header-area{
+width: 100%;
+}
+.copa-player-style{
+width:100%;
+}
+.copa-player-style img{
+width: 100%;
+}
+.copa-header-area h1{
+font-size: 38px;
+}
+}
+
